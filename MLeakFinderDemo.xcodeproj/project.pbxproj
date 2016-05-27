@@ -27,6 +27,7 @@
 		1B704C401CF7F3C4003EC3D8 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B704C361CF7F3C4003EC3D8 /* UITabBarController+MemoryLeak.m */; };
 		1B704C411CF7F3C4003EC3D8 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B704C381CF7F3C4003EC3D8 /* UIView+MemoryLeak.m */; };
 		1B704C421CF7F3C4003EC3D8 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B704C3A1CF7F3C4003EC3D8 /* UIViewController+MemoryLeak.m */; };
+		1B704C451CF826B4003EC3D8 /* YelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B704C441CF826B3003EC3D8 /* YelloView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		1B704C381CF7F3C4003EC3D8 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
 		1B704C391CF7F3C4003EC3D8 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		1B704C3A1CF7F3C4003EC3D8 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		1B704C431CF826B3003EC3D8 /* YelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelloView.h; sourceTree = "<group>"; };
+		1B704C441CF826B3003EC3D8 /* YelloView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelloView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				1B704C211CF7E3B2003EC3D8 /* FirstViewController.m */,
 				1B704C231CF7E598003EC3D8 /* SecondViewController.h */,
 				1B704C241CF7E598003EC3D8 /* SecondViewController.m */,
+				1B704C431CF826B3003EC3D8 /* YelloView.h */,
+				1B704C441CF826B3003EC3D8 /* YelloView.m */,
 			);
 			path = MLeakFinderDemo;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				1B704C3C1CF7F3C4003EC3D8 /* UIApplication+MemoryLeak.m in Sources */,
 				1B704BE01CF7E16E003EC3D8 /* AppDelegate.m in Sources */,
 				1B704C221CF7E3B2003EC3D8 /* FirstViewController.m in Sources */,
+				1B704C451CF826B4003EC3D8 /* YelloView.m in Sources */,
 				1B704BDD1CF7E16E003EC3D8 /* main.m in Sources */,
 				1B704C1E1CF7E2D0003EC3D8 /* BSTimer.m in Sources */,
 				1B704C281CF7E93F003EC3D8 /* YYTimer.m in Sources */,

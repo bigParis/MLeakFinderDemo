@@ -9,10 +9,12 @@
 #import "SecondViewController.h"
 #import "BSTimer.h"
 #import "YYTimer.h"
+#import "YelloView.h"
 
 @interface SecondViewController ()
 @property (nonatomic, strong) NSTimer *ivarTimer;
 @property (nonatomic, strong) BSTimer *ivarBSTimer;
+@property (nonatomic, weak) YellowView *yellowView;
 @end
 
 @implementation SecondViewController
@@ -33,7 +35,8 @@
     [super viewDidLoad];
     self.title = @"绿色控制器";
     self.view.backgroundColor = UIColor.greenColor;
-    [self testBSTimerBlock];
+    
+    [self testViewLeak];
 }
 
 - (void)testNSTimer {
@@ -66,6 +69,17 @@
     } repeats:YES];
 }
 
+- (void)testViewLeak {
+    YellowView *yellowView = [YellowView yellowView];
+    [self.view addSubview:yellowView];
+    self.yellowView = yellowView;
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.yellowView.frame = CGRectMake(100, 100, 100, 100);
+}
+
 - (void)onTimeout:(NSTimer *)timer {
     NSLog(@"time out execute");
 }
@@ -79,12 +93,4 @@
     NSLog(@"ivar bstime out execute");
     [timer invalidate];
 }
-//- (BOOL)willDealloc {
-//    if (![super willDealloc]) {
-//        return NO;
-//    }
-//    
-//    MLCheck(self.view);
-//    return YES;
-//}
 @end
